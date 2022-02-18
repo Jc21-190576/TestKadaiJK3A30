@@ -14,6 +14,13 @@ namespace WindowsFormsApp1
         {
             i = 0;
             int sk = 0;
+            int n = 0;
+
+            if (!g.Any())
+            {
+                return n;
+            }
+
             for (int j = 1; j <= r; j++)
             {
                 sk += ride2(k, g);
